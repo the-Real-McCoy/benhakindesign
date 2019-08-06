@@ -1,0 +1,92 @@
+//Fonts
+////////////////////////// Wes Fy //////////////////////////
+@font-face {
+    font-family: WesFyExtraBold;
+    src: url(../fonts/Wes-FY/Wes-FY-ExtraBold.ttf);
+}
+@font-face {
+    font-family: WesFyBold;
+    src: url(../fonts/Wes-FY/Wes-FY-Bold.ttf);
+}
+@font-face {
+    font-family: WesFyMedium;
+    src: url(../fonts/Wes-FY/Wes-FY-Medium.ttf);
+}
+@font-face {
+    font-family: WesFyRegular;
+    src: url(../fonts/Wes-FY/Wes-FY-Regular.ttf);
+}
+@font-face {
+    font-family: WesFyLight;
+    src: url(../fonts/Wes-FY/Wes-FY-Thin.ttf);
+}
+
+//////////////////////////  //////////////////////////
+@font-face {
+    font-family: futuraMaxi;
+    src: url(../fonts/Futura-Maxi-CG-Bold-Regular.otf);
+}
+
+@font-face {
+    font-family: gtWalsheimProBold;
+    src: url(../fonts/GT-Walsheim-Pro/GT-Walsheim-Pro-Bold.ttf);
+}
+@font-face {
+    font-family: gtWalsheimProMedium;
+    src: url(../fonts/GT-Walsheim-Pro/GT-Walsheim-Pro-Medium.ttf);
+}
+@font-face {
+    font-family: gtWalsheimProRegular;
+    src: url(../fonts/GT-Walsheim-Pro/GT-Walsheim-Pro-Regular.ttf);
+}
+@font-face {
+    font-family: gtWalsheimProLight;
+    src: url(../fonts/GT-Walsheim-Pro/GT-Walsheim-Pro-Light.ttf);
+}
+
+////////////////////////// Gilroy //////////////////////////
+@font-face {
+    font-family: neueMontrealBold;
+    src: url(../fonts/Neue-Montreal/neueMontreal-Bold.otf);
+}
+
+@font-face {
+    font-family: gilroyExtraBold;
+    src: url(../fonts/gilroy/Gilroy-Heavy.ttf);
+}
+
+
+
+////////////////////////// Helvectica Neue //////////////////////////
+@font-face {
+    font-family: helvecticaNeueBold;
+    src: url(../fonts/helvectica-neue/HelveticaNeuBold.ttf);
+}
+
+@font-face {
+    font-family: helvecticaNeueHv;
+    src: url(../fonts/helvectica-neue/HelveticaNeueHv.ttf);
+}
+
+@font-face {
+    font-family: helvecticaNeueMed;
+    src: url(../fonts/helvectica-neue/HelveticaNeueMed.ttf);
+}
+
+@font-face {
+    font-family: helvecticaNeueLight;
+    src: url(../fonts/helvectica-neue/HelveticaNeueLt.ttf);
+}
+
+@font-face {
+    font-family: helvecticaNeueThin;
+    src: url(../fonts/helvectica-neue/HelveticaNeueThin.ttf);
+}
+
+
+
+
+body {
+    font-family: $font-wesfy-regular;
+    
+}

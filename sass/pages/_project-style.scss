@@ -1,0 +1,251 @@
+
+#natours-body {
+  background: $color-off-white;
+}
+
+.natours-header {
+  height: 100vh;
+  position: relative;
+
+  @include respond (phone) {
+    height: 40vh;
+  }
+
+  &__name-logo {
+          position: absolute;
+          top: 5%;
+          left: 3%;
+          color: $color-off-black;
+          font-family: neueMontrealBold, futuraMaxi, $font-wesfy-bold;
+          font-size: 2rem;
+          
+          & span {
+              color: $color-primary;
+          }
+
+          @include respond (phone) {
+            left: 4%;
+            font-size: 1.8rem;
+          }
+        }
+
+    &__title {
+      position: absolute;
+      top: 20vh;
+      left: 5vw;
+      font-family: neueMontrealBold, futuraMaxi, $font-wesfy-bold;
+      font-size: 25vw;
+
+      @include respond (phone) {
+        font-size: 20vw;
+        left: 15vw;
+
+      }
+      
+
+
+    }    
+  
+}
+
+.project-info {
+  display: flex;
+  height: 30rem;
+
+  @include respond (phone) {
+    flex-direction: column;
+    height: 40rem;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+
+    @include respond (phone) {
+      
+    }
+
+    & p {
+      font-family: neueMontrealBold, futuraMaxi, $font-wesfy-bold;
+      font-size: 1.8rem;
+      width: 50%;
+      margin-left: 20rem;
+
+      & span {
+        color: $color-primary;
+      }
+
+      @include respond (phone) {
+        width: 100%;
+        font-size: 2rem;
+      }
+    }
+
+    & ul li {
+      list-style: none;
+      font-family: neueMontrealBold, futuraMaxi, $font-wesfy-bold;
+      font-size: 1.8rem;
+      margin-left: 20rem;
+      color: $color-primary;
+      text-transform: lowercase;
+    }
+    
+
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+.natours-showcase {
+  
+  height: auto;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__img1 {
+    width: 20%;
+    height: auto;
+    z-index: 5;
+    
+    margin: 6rem 0 2rem 3rem;
+
+   
+
+    @include respond(phone) {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      
+
+      
+    }
+  }
+
+  &__animated-blob {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    background: $color-primary;
+    height: 1000px;
+    width: 1000px;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: morph 6s linear infinite alternate;
+    z-index: 0;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__img2 {
+    width: 20%;
+    height: auto;
+    z-index: 5;
+    
+    
+    margin: 6rem 0 2rem 3rem;
+
+    @include respond(phone) {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  &__img3 {
+    width: 20%;
+    height: auto;
+    z-index: 5;
+    
+    margin: 6rem 0 2rem 3rem;
+
+  }
+
+  @include respond(phone) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.natours-showcase-2 {
+    width: 100vw;
+    height: 100rem;
+    margin-top: 20rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+  &__img1 {
+    width: 50%;
+    height: auto;
+    
+   
+    z-index: 1;
+    -webkit-box-shadow: 1px 12px 27px -15px rgba(0,0,0,0.7);
+-moz-box-shadow: 1px 12px 27px -15px rgba(0,0,0,0.7);
+box-shadow: 1px 12px 27px -15px rgba(0,0,0,0.7);
+
+    position: absolute;
+    left: 10%;
+    top: 40%;
+
+  }
+
+  &__img2 {
+    width: 50%;
+    height: auto;
+    margin-top: 28rem;
+    
+    -webkit-box-shadow: 1px 12px 27px -15px rgba(0,0,0,0.7);
+    -moz-box-shadow: 1px 12px 27px -15px rgba(0,0,0,0.7);
+    box-shadow: 1px 12px 27px -15px rgba(0,0,0,0.7);
+
+    position: absolute;
+    right: 10%;
+    top: 60%;
+  }
+}
+
+.next-project {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__natours {
+    font-size: 10rem;
+    font-family: neueMontrealBold, futuraMaxi, $font-wesfy-bold;
+    color: $color-off-black;
+
+    & a {
+      color: $color-primary;
+      transition: all 0.5s;
+      text-decoration: none;
+
+      &:hover {
+        color: transparent;
+        -webkit-text-stroke: 1px $color-primary;
+        cursor: pointer;
+      }
+    }
+
+    @include respond(phone) {
+      font-size: 5rem;
+      text-align: left;
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,229 @@
+//Header container for all content to be inside - 100vh
+.header-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: $color-off-black;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+    height: 100vh;
+    
+  }
+
+// Hello, Work and Let's talk navigation - Top right
+  & .navigation {
+    position: absolute;
+    left: 92%;
+    top: 15%;
+    text-align: right;
+    z-index: 10000;
+
+    @include respond(tab-port) {
+      top: 2%;
+      right: 2%;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    &__list {
+      text-decoration: none;
+      list-style: none;
+      animation-delay: 5s;
+
+      &--item {
+        margin-bottom: 2rem;
+
+        & a {
+          font-family: helvecticaNeueMed, sans-serif;
+          color: $color-off-white;
+          font-size: 1.5rem;
+          transition: color 0.5s;
+
+          
+
+          &:hover {
+            
+            text-decoration: none;
+          }
+
+          @include respond(tab-port) {
+            font-size: 1.7rem;
+            margin-bottom: 0;
+          }
+
+          @include respond(phone) {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+
+
+// BenHakin Design logo - Top left
+  &__name-logo {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    color: $color-off-white;
+    font-family: neueMontrealBold,futuraMaxi;
+    font-size: 1.9rem;
+    letter-spacing: -1px;
+    animation-delay: 5s;
+
+    & span {
+      color: $color-primary;
+
+      @include respond(phone) {
+        color: $color-primary;
+      }
+    }
+
+    @include respond(tab-port) {
+      top: 3%;
+    }
+
+    @include respond(phone) {
+      top: 4%;
+      left: 9%;
+      width: 100%;
+      color: $color-off-white;
+      font-size: 2rem;
+      animation-delay: 4s;
+    }
+  }
+
+//Main red circle - Center back
+  &__header-circle {
+    background-color: $color-primary;
+    
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    @include hvCenter;
+    z-index: 1000;
+
+    @include respond(tab-port) {
+      height: 45rem;
+      width: 45rem;
+    }
+
+    @include respond(phone) {
+      background-color: $color-primary;
+      top: 45%;
+      left: 120%;
+      height: 80rem;
+      width: 80rem;
+      z-index: 0;
+    }
+  }
+}
+
+// Glitch effect for main haeader title - Center front
+.TextGlitch {
+  position: relative;
+  top: 5vh;
+  text-align: center;
+  width: 100%;
+  z-index: 1001;
+  color: $color-off-white;
+  font-weight: bolder;
+  font-size: 40rem;
+  letter-spacing: -6px;
+  font-family: neueMontrealBold, futuraMaxi, $font-wesfy-bold;
+  animation-delay: 5s;
+
+  @include respond(tab-port) {
+    font-size: 15rem;
+    top: 45vh;
+  }
+
+  @include respond(phone) {
+    font-size: 11rem;
+    letter-spacing: -1px;
+    top: 65vh;
+    text-align: left;
+    margin-left: 4rem;
+    // animation-delay: 7s;
+  }
+}
+
+.TextGlitch-clip {
+  position: relative;
+}
+.TextGlitch-clip + .TextGlitch-clip {
+  position: absolute;
+  top: 0;
+}
+.TextGlitch:not(.TextGlitch-blended) .TextGlitch-clip + .TextGlitch-clip {
+  display: none;
+}
+
+.TextGlitch-word {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.TextGlitch-blend {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.1s;
+  transition-property: opacity;
+}
+.TextGlitch-blendA {
+  color: $color-primary;
+  margin: -0.03em 0 0 0.03em;
+  mix-blend-mode: darken;
+}
+.TextGlitch-blendB {
+  color: $color-primary;
+  margin: 0.03em 0 0 -0.03em;
+  mix-blend-mode: color-burn;
+}
+.TextGlitch-blended .TextGlitch-blend {
+  opacity: 0.4;
+}
+
+.c-scrolldown {
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.c-scrolldown .c-line {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(to bottom, #E4D4BB 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: 0 -60px;
+  background-size: 100% 200%;
+  animation: scrolldown 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+}
+
+@keyframes scrolldown {
+  0% {
+    background-position: 0 -60px;
+  }
+  75% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 60px;
+  }
+}

@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+.contact {
+  height: 100vh;
+  width: 100%;
+  background-color: $color-primary;
+  position: relative;
+
+
+  &__mainText {
+    @include hvCenter;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    font-family: neueMontrealBold ,futuraMaxi, $font-wesfy-bold;
+    color: $color-off-black;
+    font-size: 35rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: -8px;
+
+    @include respond(tab-port) {
+      font-size: 19rem;
+    }
+
+    @include respond(phone) {
+      font-size: 12rem;
+      
+    }
+
+  }
+
+  &__email {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: $color-off-white;
+    font-family: helvecticaNeueMed;
+    font-size: 4rem;
+
+    &:hover {
+      -webkit-text-stroke: 0.7px $color-off-white;
+      color: transparent;
+      cursor: pointer;
+
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+      top: 55.5%;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+      top: 54.5%;
+    }
+
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    font-family: helvecticaNeueMed;
+    font-size: 1.2rem;
+    color: $color-off-black;
+  }
+
+
+  
+}
